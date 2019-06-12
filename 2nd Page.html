@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>More About Me</title>
+        <link rel = "stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div>
+            <header>
+                <h1><b>Joey Domino's Bio</b></h1>
+                <hr>
+            </header>    
+            <nav>
+                <a href="Main Page.html" title = "Page 1">Page 1</a>
+                <a href="3rd Page.html" title = "Page 3">Page 3</a>
+            </nav>
+            <h3>Choose your topic</h3>
+            <br>
+            <button class="collapsible">Locations Visited</button>
+            <div class="content">
+                <h3>Visited within last 2 years</h3>
+                <table>
+                    <tr>
+                        <th>City</th>
+                        <th>Country</th>
+                        <th>Place of Interest</th>
+                        <th>Picture (Click Picture to Expand!)</th>                   
+                     </tr>
+                    <tr>
+                        <td>Kleinwasertal</td>
+                        <td>Austria</td>
+                        <td>Allgäu Alps</td>
+                        <td><a href="http://footage.framepool.com/shotimg/qf/923747570-schoellang-allgaeu-alps-picturesque-drone-aircraft.jpg">
+                            <img src="Allgäu Alps.jpg" alt="Allgäu Alps"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Vienna</td>
+                        <td>Austria</td>
+                        <td>Schönbrunn Palace</td>
+                        <td><a href="https://whc.unesco.org/uploads/thumbs/site_0786_0022-750-0-20130923102244.jpg">
+                            <img src="https://whc.unesco.org/uploads/thumbs/site_0786_0022-750-0-20130923102244.jpg" alt="Schönbrunn Palace"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Tokyo</td>
+                        <td>Japan</td>
+                        <td>Tokyo Skytree</td>
+                        <td><a href="https://www.gotokyo.org/en/destinations/eastern-tokyo/skytree-and-around/images/6_0099_17.jpg">
+                            <img src="https://www.gotokyo.org/en/destinations/eastern-tokyo/skytree-and-around/images/6_0099_17.jpg"
+                            alt="Tokyo Skytree"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Austin</td>
+                        <td>United States</td>
+                        <td>Bat Bridge</td>
+                        <td><a href="https://i2.wp.com/freefuninaustin.com/wp-content/uploads/sites/44/2015/08/bats.jpg?ssl=1">
+                            <img src="https://i2.wp.com/freefuninaustin.com/wp-content/uploads/sites/44/2015/08/bats.jpg?ssl=1" 
+                            alt="Bat Bridge"></a></td>
+                    </tr>
+                </table>
+            </div>
+            <button class="collapsible">Video Games</button>
+            <div class="content">
+                <h3>Top 5 Games Throughout My Life.</h3>
+                <ol>
+                    <li>God Hand</li>
+                    <li>Factorio</li>
+                    <li>DragonBall FighterZ</li>
+                    <li>Dying Light</li>
+                    <li>Uncharted Series</li>
+                        <ul>
+                            <li>Basically anything made by Naughty Dog</li>
+                        </ul>
+                </ol>
+            </div>
+            <button class="collapsible">Links</button>
+            <div class="content">
+                <h3>My youtube and Twitter.</h3>
+                <ul>
+                    <li><a href="https://www.youtube.com/user/YuubiZ/videos">Youtube videos</a></li>
+                    <li><a href="https://twitter.com/Yuubi_Z">Twitter</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=Sr_SGkqrrdM">For those that bothered to look here</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=UEISiCmjwH8">You're welcome</a></li>
+                </ul>
+            </div>
+            <script>
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
+                    
+                for (i = 0; i < coll.length; i++) {
+                  coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                      content.style.display = "none";
+                    } else {
+                      content.style.display = "block";
+                    }
+                  });
+                }
+            </script>
+        </div>
+        <div>
+            <footer>
+                <hr>
+                <p>Created by: &#10645 Joey Domino &#10646</p>
+                <p>Contact info: <a href="mailto:gz2322@wayne.edu">
+                    gz2322@wayne.edu</a>.</p>
+            </footer>
+        </div>
+    </body>
+</html>

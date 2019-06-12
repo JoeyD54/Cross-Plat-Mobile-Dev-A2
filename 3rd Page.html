@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>Contact Me!</title>
+        <link rel = "stylesheet" href="styles.css">
+    </head>
+    <body class = "a">
+        <div>
+            <header>
+                    <h1><b>Joey Domino's Bio</b></h1>
+                    <hr>
+            </header>
+            <nav>
+                <a href="Main Page.html" title = "Main Page">Page 1</a>
+                <a href="2nd Page.html" title = "Page 2">Page 2</a>
+            </nav>
+            <h3>
+                Please message me with any issues you have with the site.
+            </h3>
+            <form action="Process.php" method="POST">
+                <label for="Name">Full Name</label><br>
+                <input type="text" name="Name" maxlength="40" autofocus required>
+                <br><br>
+                <label for="Email">Email</label><br>
+                <input type="email" name="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" maxlength="35" required>
+                <br><br>
+                <label for="ContactReason">Reason for Contact</label><br>
+                <input type="text" name="ContactReason" maxlength="30" required>
+                <br><br>
+                <label for="Message">Message (300 character max)</label><br>
+                <textarea rows="5" cols="60" placeholder="What would you like improved/changed?" name="Message" maxlength="300" required></textarea>
+                <br>
+                <input type="checkbox" name="SendEmail" value="1"> Would you like an email verifying your message?
+                <br><br>
+                <div class="button">
+                    <input type = "submit" value = "Submit">
+                    <br>
+                </div>
+            </form>
+        </div> 
+        <div>
+                <footer>
+                    <hr>
+                    <p>Created by: &#10645 Joey Domino &#10646</p>
+                    <p>Contact info: <a href="mailto:gz2322@wayne.edu">
+                        gz2322@wayne.edu</a>.</p>
+                </footer>
+            </div>
+    </body>
+</html>
